@@ -1,0 +1,17 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body  {
+  font-size: 10px;
+}
+
+li {
+  list-style-type: none;
+}
+
+a:hover,a:visited, a:link {
+  text-decoration: none;
+}
