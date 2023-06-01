@@ -4,13 +4,23 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="images/favicon/favicon-32x32.png"
+      type="image/x-icon"
+    />
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/responsive.css" />
 
-    <title>Memo</title>
+    <title>&hyphen; Notes Anywhere</title>
   </head>
   <body>
     <header class="header">
@@ -42,14 +52,30 @@
     <section class="body">
       <form>
         <div class="text-area">
-          <textarea name="memo" class="text-area-child" type="text" maxlength="1000"></textarea>
-        </div
+          <textarea name="memo" class="text-area-child" type="text"></textarea>
+        </div>
       </form>
+      <div class="login">
+        <form class="login-form">
+          <label for="userName">User Name</label>
+          <input name="userName" type="username" placeholder="Your Name" />
+          <br />
+          <label for="password">Password</label>
+          <input type="password" name="password" placeholder="Password" />
+        </form>
+      </div>
     </section>
     <footer class="footer">
-      &copy; <a href="" class="footer-link">Sushank</a>,
-      <a href="" class="footer-link">Hardik</a>,
-      <a href="" class="footer-link">Paramayu</a>
+      &copy;
+      <a href="https://github.com/Sushank49" target="_blank" class="footer-link"
+        >Sushank</a
+      >,
+      <a href="https://github.com/HardikNeo" target="_blank" class="footer-link"
+        >Hardik</a
+      >,
+      <a href="https://github.com/Paramayu" target="_blank" class="footer-link"
+        >Paramayu</a
+      >
       <span class="footer-date">2023</span>
     </footer>
 
