@@ -1,0 +1,36 @@
+.body{
+  padding-bottom: 2rem;
+}
+.header{
+  height: 8rem;
+}
+.nav-dad{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+}
+.text-area{
+  text-align: right;
+}
+.text-area-child{
+  margin-right: 5rem;
+  width:40rem;
+  height:28rem;
+  resize:none;
+  border-radius: 5%;
+  padding: 1rem;
+  background-color: #ffe375;
+}
+.footer{
+  position: fixed;
+  text-align: center;
+  bottom:0;
+  width:100%;
+  height:2rem;
+}
