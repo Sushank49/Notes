@@ -1,24 +1,39 @@
-.all{
-  background-color: #fff3bf;
-}
+
+
 .body{
   padding-bottom: 2rem;
 }
 .header{
   height: 8rem;
 }
+
+.nav {
+  padding-top: 1rem;
+}
+
 .nav-dad{
   display: flex;
   justify-content: center;
   align-items: center;
   justify-content: space-around;
   font-size: 1.6rem;
+  font-weight: 600;
+  gap:10rem;
+}
+.sign-up {
+  outline: 2px solid #495057;
+  outline-offset: 5px;
+  border-radius: 3%;
+  transition: all .3s;
+}
+  
+.sign-up:hover{
+  background-color: #ffe375;
+  box-shadow: 0 0 0 7px  #ffe375;
   
 }
-
 .nav-link:link, .nav-link:visited {
   color: #212529;
-  
 }
 
 .nav-child {
@@ -27,40 +42,76 @@
 }
 
 .nav-child:hover {
-  text-decoration: underline;
+  /* NEEDS CHANGE  */
+  
 }
+
 
 .nav-links {
   display: flex;
-  gap: 2rem;
+  gap: 3.5rem;
 }
 .text-area{
-  text-align: right;
+  text-align: center;
+  padding-top: 3rem;
+  
 }
 .text-area-child{
-  margin-right: 5rem;
   width:40rem;
-  height:28rem;
+  height:45rem;
   resize:none;
   border-radius: 20px;
   padding: 1rem;
   background-color: #ffe375;
+  font-size: 1.6rem;
 }
 .footer{
   position: fixed;
   text-align: center;
-  bottom:0;
   width:100%;
   height:2rem;
   font-size: 1rem;
+  bottom: 0;
 }
-
 .login{
-  width: 18rem;
-  height:20rem;
+  /* width: 18rem; */
+  /* height:20rem; */
   background-color: #ffe375 ;
-  text-align: center;
+  text-align:center;
   border-radius: 20px;
+  margin-top: 2rem;
+  margin: 0 auto;
+  z-index: -1;
+  width: 0;
+  display: none;
+  opacity: 0;
+  }
+.login-text{
+    font-size: 2rem;
+  }
+.username{
+  margin-top: 2rem;
+  font-size: 1rem;  
+  border-radius: 5px;
+  height:1.8rem;
+  background-color:#fff3bf ;
+  border:none;
 }
-
-
+.password{
+  margin-top: 2.5rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  height:1.8rem;
+  background-color:#fff3bf ;
+  border:none;
+}
+.btn-login{
+  margin-top: 2rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  height:1.8rem;
+  width:5rem;
+  font-weight: 700;
+  background-color:#fff3bf ;
+  border:none;
+}
