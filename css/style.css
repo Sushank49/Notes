@@ -1,3 +1,6 @@
+.all{
+  background-color: #fff3bf;
+}
 .body{
   padding-bottom: 2rem;
 }
@@ -39,7 +42,7 @@
   width:40rem;
   height:28rem;
   resize:none;
-  border-radius: 5%;
+  border-radius: 20px;
   padding: 1rem;
   background-color: #ffe375;
 }
@@ -53,7 +56,11 @@
 }
 
 .login{
-  display: none;
-  opacity: 0;
+  width: 18rem;
+  height:20rem;
+  background-color: #ffe375 ;
+  text-align: center;
+  border-radius: 20px;
 }
+
 
