@@ -6,11 +6,17 @@
 .header{
   height: 8rem;
 }
+.header-abt{
+  height: 8rem;
+}
+
 
 .nav {
   padding-top: 1rem;
 }
-
+.nav-abt {
+  padding-top: 1rem;
+}
 .nav-dad{
   display: flex;
   justify-content: center;
@@ -32,10 +38,35 @@
   box-shadow: 0 0 0 7px  #ffe375;
   
 }
-.nav-link:link, .nav-link:visited {
+.home-dad{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 1.6rem;
+  font-weight: 600;
+  gap:10rem;
+}
+.home-child {
+  outline: 2px solid #495057;
+  outline-offset: 5px;
+  border-radius: 3%;
+  transition: all .3s;
+}
+  
+.home-link:hover{
+  background-color: #ffe375;
+  box-shadow: 0 0 0 7px  #ffe375;
+  border-radius: 3%;
+  
+}
+.home-link:link, .home-link:visited {
   color: #212529;
 }
-
+.home-child {
+  transition: all .3s ;
+  
+}
 .nav-child {
   transition: all .3s ;
   
@@ -68,6 +99,14 @@
 .footer{
   position: fixed;
   text-align: center;
+  width:100%;
+  height:2rem;
+  font-size: 1rem;
+  bottom: 0;
+}
+.footer-abt{
+  position: fixed;
+  text-align:center;
   width:100%;
   height:2rem;
   font-size: 1rem;
