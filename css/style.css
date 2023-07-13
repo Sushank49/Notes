@@ -122,35 +122,40 @@ body {
   bottom: 0;
 }
 .signup-div{
-  width: 30rem;
-  height:40rem;
-  background-color: #ffe375 ;
-  text-align:center;
-  border-radius: 20px;
-  margin-top: 2rem;
-  margin: 0 auto;
-  z-index: -1;
-  display: none;
-  opacity: 0;
+  transition: all .3s;
+    width: 30rem;
+    height: 40rem;
+    background-color: #ffe375;
+    text-align: center;
+    border-radius: 20px;
+    margin-top: 2rem;
+    z-index: 99;
+    display: none;
+    opacity: 0;
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    transform: translate(50%, -50%);
+    box-shadow: 0 10px 20px 5px rgba(0, 0, 0, 0.3);
   }
 
 
 .login{
   transition: all .3s;
-  width: 30rem;
-  height:40rem;
-  background-color: #ffe375 ;
-  text-align:center;
-  border-radius: 20px;
-  margin-top: 2rem;
-  z-index: 99;
-  display: none;
-  opacity: 0;
-  position: absolute;
-  right: 50%;
-  top: 50%;
-  transform: translate(50%, -50%);
-  box-shadow: 0 10px 20px 5px rgba(0, 0 ,0 ,0.3);
+    width: 30rem;
+    height: 40rem;
+    background-color: #ffe375;
+    text-align: center;
+    border-radius: 20px;
+    margin-top: 2rem;
+    z-index: 99;
+    display: none;
+    opacity: 0;
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    transform: translate(50%, -50%);
+    box-shadow: 0 10px 20px 5px rgba(0, 0, 0, 0.3);
 }
 
 .login-text{
