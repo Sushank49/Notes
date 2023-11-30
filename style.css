@@ -1,0 +1,250 @@
+
+
+.body{
+  padding-bottom: 2rem;
+}
+.header{
+  height: 8rem;
+}
+.header-abt{
+  height: 10rem;
+}
+.nav {
+  padding-top: 1rem;
+}
+.nav-abt {
+  padding-top: 1rem;
+}
+.nav-dad{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 1.6rem;
+  font-weight: 600;
+  gap:10rem;
+}
+.sign-up {
+  outline: 2px solid #495057;
+  outline-offset: 5px;
+  border-radius: 3%;
+  transition: all .3s;
+}
+  
+.sign-up:hover{
+  background-color: #ffe375;
+  box-shadow: 0 0 0 7px  #ffe375;
+  
+}
+.home-dad{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 1.6rem;
+  font-weight: 600;
+  gap:10rem;
+}
+.home-child {
+  outline: 2px solid #495057;
+  outline-offset: 5px;
+  border-radius: 3%;
+  transition: all .3s;
+}
+  
+.home-link:hover{
+  background-color: #ffe375;
+  box-shadow: 0 0 0 7px  #ffe375;
+  border-radius: 3%;
+  
+}
+.nav-link:link, .nav-link:visited {
+  color: #212529;
+}
+.home-link:link, .home-link:visited {
+  color: #212529;
+}
+.home-child {
+  transition: all .3s ;
+  
+}
+.nav-child {
+  transition: all .3s ;
+  
+}
+
+.nav-child:hover {
+  /* NEEDS CHANGE  */
+}
+
+
+.nav-links {
+  display: flex;
+  gap: 3.5rem;
+}
+.abt-title{
+  font-size: 4.8rem;
+  font-weight: 700;
+  text-decoration: underline;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+.prev-notes{
+  position:relative;
+  height: 100vh;
+  width:40rem;
+  background-color: #ffe375;
+  border-radius: 20px;
+  border-right: #495057 10px;
+  display: none;
+  opacity: 0;
+}
+.text-area{
+  text-align: center;
+  padding-top: 3rem;
+  position: relative;
+
+}
+.text-area-child{
+  width:40rem;
+  height:45rem;
+  resize:none;
+  border-radius: 20px;
+  padding: 1rem;
+  background-color: #ffe375;
+  font-size: 1.6rem;
+}
+.footer{
+  position: fixed;
+  text-align: center;
+  width:100%;
+  height:2rem;
+  font-size: 1rem;
+  bottom: 0;
+}
+.footer-abt{
+  position: fixed;
+  text-align:center;
+  width:100%;
+  height:2rem;
+  font-size: 1.6rem;
+  bottom: 0;
+}
+.signup-div{
+  width: 30rem;
+  height:40rem;
+  background-color: #ffe375 ;
+  text-align:center;
+  border-radius: 20px;
+  margin-top: 2rem;
+  margin: 0 auto;
+  z-index: -1;
+  display: none;
+  opacity: 0;
+  }
+
+
+.login{
+  width: 30rem;
+  height:40rem;
+  background-color: #ffe375 ;
+  text-align:center;
+  border-radius: 20px;
+  margin-top: 2rem;
+  margin: 0 auto;
+  z-index: -1;
+  display: none;
+  opacity: 0;
+  }
+
+.login-text{
+    font-size: 3rem;
+    color: #212529;
+  }
+.username{
+  margin-top: 2rem;
+  font-size: 1rem;  
+  border-radius: 5px;
+  height:1.8rem;
+  background-color:#fff3bf ;
+  border:none;
+}
+.password{
+  margin-top: 2.5rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  height:1.8rem;
+  background-color:#fff3bf ;
+  border:none;
+}
+.btn-login{
+  margin-top: 2rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  height:1.8rem;
+  width:5rem;
+  font-weight: 700;
+  background-color:#fff3bf ;
+  border:none;
+}
+.btn-signup{
+  margin-top: 2rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  height:1.8rem;
+  width:5rem;
+  font-weight: 700;
+  background-color:#fff3bf ;
+  border:none;
+}
+
+.body-abt {
+  margin: 0 auto
+}
+
+.about-us{
+  display: flex;
+  gap:10rem;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-card {
+  width: 30rem;
+  height:40rem;
+  background-color: #ffe375 ;
+  text-align:center;
+  border-radius: 20px;
+  margin-top: 2rem;
+  margin: 0 auto;
+  transition: all .3s;
+}
+
+.profile-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 5px 10px rgba(0, 0 ,0 ,0.3); /*x y offset color*/
+}
+.profile-ul{
+  position: relative;
+  top:10rem;
+  display: flex;
+  justify-content: center;
+  gap:4rem;
+}
+.profile-img{
+  margin: 1rem auto;
+  height: 18rem;
+  width: 18rem;
+  border-radius: 50%;
+}
+.profile-name{
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.profile-link-img{
+  height: 5rem;
+  width : 5rem;
+  border-radius: 50%;
+}
