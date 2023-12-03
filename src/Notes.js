@@ -1,7 +1,8 @@
 import { useState } from "react";
 
-export default function Notes() {
+export default function Notes(setSavedNotes) {
   const [text, setText] = useState("");
+  const [title, setTitle] = useState("");
 
   function handleChange(e) {
     setText(e.target.value);
@@ -12,6 +13,12 @@ export default function Notes() {
       alert("Atleast save something you dumb");
       return;
     }
+    const notes = {
+      message: text,
+      title: title,
+    };
+
+    setSavedNotes((savedNotes) => [...savedNotes, notes]);
     e.preventDefault();
   }
 
