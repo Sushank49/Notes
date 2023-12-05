@@ -15,7 +15,7 @@ export default function Notes({ setSavedNotes }) {
       return;
     }
     const notes = {
-      message: text,
+      notes: text,
       title: title,
     };
 
@@ -28,6 +28,7 @@ export default function Notes({ setSavedNotes }) {
   return (
     <form id="note-main">
       <input
+        value={title}
         className="note-title"
         placeholder="TITLE"
         id="note-title"
