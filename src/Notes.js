@@ -1,8 +1,7 @@
 import { useState } from "react";
 
-export default function Notes({ setSavedNotes }) {
+export default function Notes({}) {
   const [text, setText] = useState("");
-  const [title, setTitle] = useState("");
 
   function handleChange(e) {
     setText(e.target.value);
@@ -15,18 +14,20 @@ export default function Notes({ setSavedNotes }) {
       return;
     }
     const notes = {
-      notes: text,
+      message: text,
       title: title,
     };
 
     setSavedNotes((savedNotes) => [...savedNotes, notes]);
-    alert("Message is now saved!");
-    setText("");
-    setTitle("");
+    e.preventDefault();
   }
 
   return (
-    <form>
+    <form id="note-main">
+      <input className="note-title" id="note-title" type="text"></input>
+      <button className="btn-save" onClick={handleSave}>
+        Save
+      </button>
       <div className="text-area">
         <textarea
           name="memo"
@@ -36,10 +37,6 @@ export default function Notes({ setSavedNotes }) {
           onChange={handleChange}
         ></textarea>
       </div>
-
-      <button className="btn-save" onClick={handleSave}>
-        Save
-      </button>
     </form>
   );
 }
