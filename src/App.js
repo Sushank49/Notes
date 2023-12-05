@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Notes from "./Notes";
+import PrevNotes from "./PrevNotes";
 
 export default function App() {
   const [savedNotes, setSavedNotes] = useState([]);
@@ -14,6 +15,7 @@ export default function App() {
   return (
     <>
       <Header />
+      <PrevNotes savedNotes={savedNotes} />
       <Notes setSavedNotes={setSavedNotes}></Notes>
       <Footer></Footer>
     </>
