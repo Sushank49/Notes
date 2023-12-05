@@ -29,6 +29,7 @@ export default function Notes({ setSavedNotes }) {
     <form id="note-main">
       <input
         className="note-title"
+        placeholder="TITLE"
         id="note-title"
         type="text"
         onChange={(e) => setTitle(e.target.value)}
