@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export default function Notes(setSavedNotes) {
+export default function Notes({ setSavedNotes }) {
   const [text, setText] = useState("");
   const [title, setTitle] = useState("");
 
@@ -9,17 +9,20 @@ export default function Notes(setSavedNotes) {
   }
 
   function handleSave(e) {
+    e.preventDefault();
     if (!text) {
       alert("Atleast save something you dumb");
       return;
     }
     const notes = {
-      message: text,
+      notes: text,
       title: title,
     };
 
     setSavedNotes((savedNotes) => [...savedNotes, notes]);
-    e.preventDefault();
+    alert("Message is now saved!");
+    setText("");
+    setTitle("");
   }
 
   return (
