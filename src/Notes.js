@@ -1,7 +1,8 @@
 import { useState } from "react";
 
-export default function Notes({}) {
+export default function Notes({ setSavedNotes }) {
   const [text, setText] = useState("");
+  const [title, setTitle] = useState("");
 
   function handleChange(e) {
     setText(e.target.value);
@@ -19,12 +20,19 @@ export default function Notes({}) {
     };
 
     setSavedNotes((savedNotes) => [...savedNotes, notes]);
-    e.preventDefault();
+    alert("Message saved");
+    setText("");
+    setTitle("");
   }
 
   return (
     <form id="note-main">
-      <input className="note-title" id="note-title" type="text"></input>
+      <input
+        className="note-title"
+        id="note-title"
+        type="text"
+        onChange={(e) => setTitle(e.target.value)}
+      ></input>
       <button className="btn-save" onClick={handleSave}>
         Save
       </button>

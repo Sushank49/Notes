@@ -2,10 +2,19 @@ import { useEffect, useState } from "react";
 import Notes from "./Notes";
 
 export default function App() {
+  const [savedNotes, setSavedNotes] = useState([]);
+
+  useEffect(
+    function () {
+      localStorage.setItem("Notes", JSON.stringify(savedNotes));
+    },
+    [savedNotes]
+  );
+
   return (
     <>
       <Header />
-      <Notes></Notes>
+      <Notes setSavedNotes={setSavedNotes}></Notes>
       <Footer></Footer>
     </>
   );
