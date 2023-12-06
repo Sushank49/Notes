@@ -86,7 +86,6 @@
   width: 40rem;
   background-color: #ffe375;
   border-radius: 20px;
-  margin-left: 10rem;
   border-right: #495057 10px;
 }
 .prev-notes-child {
@@ -116,8 +115,7 @@
 #note-main {
   height: 55rem;
   width: 40rem;
-  margin: auto;
-  margin: auto auto auto 70rem;
+  margin: 0 auto;
 }
 .text-area {
   text-align: center;
@@ -160,7 +158,7 @@
   background-color: #fff3bf;
   margin-top: 1rem;
   font-size: 1.6rem;
-  margin-left: 7.5rem;
+  margin-left: 4rem;
 }
 .btn-save:hover {
   background-color: #ffd426;

@@ -6,13 +6,14 @@ export default function Notes({ setSavedNotes, selectedNotes, savedNotes }) {
 
   useEffect(
     function () {
-      if (selectedNotes) {
-        const selectedNote = savedNotes.find(
-          (note) => note.id === selectedNotes
-        );
-        setText(selectedNote.notes);
-        setTitle(selectedNote.title);
+      if (!selectedNotes) {
+        return;
       }
+      const selectedNote = savedNotes?.find(
+        (note) => note?.id === selectedNotes
+      );
+      setText(selectedNote?.notes);
+      setTitle(selectedNote?.title);
     },
     [selectedNotes, savedNotes]
   );
