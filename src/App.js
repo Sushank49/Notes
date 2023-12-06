@@ -3,11 +3,16 @@ import Notes from "./Notes";
 import PrevNotes from "./PrevNotes";
 
 export default function App() {
-  const [savedNotes, setSavedNotes] = useState([]);
+  const [savedNotes, setSavedNotes] = useState(function () {
+    const storedValue = localStorage.getItem("SavedNotes");
+    return JSON.parse(storedValue) || [];
+  });
+
+  const [selectedNotes, setSelectedNotes] = useState("");
 
   useEffect(
     function () {
-      localStorage.setItem("Notes", JSON.stringify(savedNotes));
+      localStorage.setItem("SavedNotes", JSON.stringify(savedNotes));
     },
     [savedNotes]
   );
@@ -15,7 +20,11 @@ export default function App() {
   return (
     <>
       <Header />
-      <PrevNotes savedNotes={savedNotes} />
+      <PrevNotes
+        savedNotes={savedNotes}
+        selectedNotes={selectedNotes}
+        setSelectedNotes={setSelectedNotes}
+      />
       <Notes setSavedNotes={setSavedNotes}></Notes>
       <Footer></Footer>
     </>

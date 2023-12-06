@@ -17,6 +17,8 @@ export default function Notes({ setSavedNotes }) {
     const notes = {
       notes: text,
       title: title,
+      time: new Date().getUTCDate(),
+      id: new Date().getMilliseconds(),
     };
 
     setSavedNotes((savedNotes) => [...savedNotes, notes]);
