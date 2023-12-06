@@ -1,8 +1,21 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
-export default function Notes({ setSavedNotes }) {
+export default function Notes({ setSavedNotes, selectedNotes, savedNotes }) {
   const [text, setText] = useState("");
   const [title, setTitle] = useState("");
+
+  useEffect(
+    function () {
+      if (selectedNotes) {
+        const selectedNote = savedNotes.find(
+          (note) => note.id === selectedNotes
+        );
+        setText(selectedNote.notes);
+        setTitle(selectedNote.title);
+      }
+    },
+    [selectedNotes, savedNotes]
+  );
 
   function handleChange(e) {
     setText(e.target.value);

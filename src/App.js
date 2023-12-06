@@ -22,10 +22,15 @@ export default function App() {
       <Header />
       <PrevNotes
         savedNotes={savedNotes}
+        setSavedNotes={setSavedNotes}
         selectedNotes={selectedNotes}
         setSelectedNotes={setSelectedNotes}
       />
-      <Notes setSavedNotes={setSavedNotes}></Notes>
+      <Notes
+        setSavedNotes={setSavedNotes}
+        savedNotes={savedNotes}
+        selectedNotes={selectedNotes}
+      ></Notes>
       <Footer></Footer>
     </>
   );

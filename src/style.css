@@ -308,3 +308,20 @@
   font-size: 2.4rem;
 }
 
+.prev-note-time {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.delete {
+  margin-top: 2rem;
+  margin-left: 32rem;
+}
+
+.dustbin {
+  transition: all .2s;
+}
+
+.dustbin:hover {
+  fill: #797979;
+}
