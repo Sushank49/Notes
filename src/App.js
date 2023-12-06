@@ -57,11 +57,11 @@ function Nav() {
       <div className="logo-box">
         <a
           href="#"
-          className="nav-link"
+          className="nav-logo"
           rel="noreferrer"
           onClick={() => setPage("-Notes Anywhere")}
         >
-          <li className="nav-child">LOGO</li>
+          <li className="nav-logo">LOGO</li>
         </a>
       </div>
       <NavLinks setPage={setPage}></NavLinks>
@@ -74,23 +74,6 @@ function NavLinks({ setPage }) {
     <div className="nav-links">
       <a href="#" className="nav-link" rel="noreferrer">
         <li className="nav-child">New note</li>
-      </a>
-      <a href="about.html" className="nav-link" rel="noreferrer">
-        <li
-          className="nav-child"
-          onClick={(e) => {
-            setPage("About");
-            e.preventDefault();
-          }}
-        >
-          About
-        </li>
-      </a>
-      <a href="#" className="nav-link" rel="noreferrer">
-        <li className="nav-child sign-in">Sign in</li>
-      </a>
-      <a href="#" className="nav-link sign-up" rel="noreferrer">
-        <li className="nav-child">Sign up</li>
       </a>
     </div>
   );
