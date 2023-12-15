@@ -9,6 +9,7 @@ export default function App() {
   });
 
   const [selectedNotes, setSelectedNotes] = useState("");
+  const [newNote, setNewNote] = useState(false);
 
   useEffect(
     function () {
@@ -19,7 +20,7 @@ export default function App() {
 
   return (
     <>
-      <Header />
+      <Header setNewNote={setNewNote} />
       <PrevNotes
         savedNotes={savedNotes}
         setSavedNotes={setSavedNotes}
@@ -30,17 +31,20 @@ export default function App() {
         setSavedNotes={setSavedNotes}
         savedNotes={savedNotes}
         selectedNotes={selectedNotes}
+        newNote={newNote}
+        setNewNote={setNewNote}
+        setSelectedNotes={setSelectedNotes}
       ></Notes>
       <Footer></Footer>
     </>
   );
 }
 
-function Header() {
-  return <Nav className="nav"></Nav>;
+function Header({ setNewNote }) {
+  return <Nav className="nav" setNewNote={setNewNote}></Nav>;
 }
 
-function Nav() {
+function Nav({ setNewNote }) {
   const [page, setPage] = useState("- Notes Anywhere");
 
   useEffect(
@@ -69,16 +73,18 @@ function Nav() {
           <li className="nav-logo">LOGO</li>
         </a>
       </div>
-      <NavLinks setPage={setPage}></NavLinks>
+      <NavLinks setPage={setPage} setNewNote={setNewNote}></NavLinks>
     </ul>
   );
 }
 
-function NavLinks({ setPage }) {
+function NavLinks({ setPage, setNewNote }) {
   return (
     <div className="nav-links">
       <a href="#" className="nav-link" rel="noreferrer">
-        <li className="nav-child">New note</li>
+        <li className="nav-child" onClick={() => setNewNote(true)}>
+          New note
+        </li>
       </a>
     </div>
   );

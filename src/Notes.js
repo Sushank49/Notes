@@ -1,8 +1,27 @@
 import { useEffect, useState } from "react";
 
-export default function Notes({ setSavedNotes, selectedNotes, savedNotes }) {
+export default function Notes({
+  setSavedNotes,
+  selectedNotes,
+  savedNotes,
+  newNote,
+  setNewNote,
+  setSelectedNotes,
+}) {
   const [text, setText] = useState("");
   const [title, setTitle] = useState("");
+
+  useEffect(
+    function () {
+      if (newNote) {
+        setText("");
+        setTitle("");
+        setNewNote(false);
+        setSelectedNotes("");
+      }
+    },
+    [setNewNote, newNote]
+  );
 
   useEffect(
     function () {
